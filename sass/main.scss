@@ -1,0 +1,26 @@
+//BASE
+@import "./base/container";
+@import "./base/common";
+
+//UNTIL
+@import "./utils/variables";
+
+//COMPONENTS
+@import "./components/close-btn";
+@import "./components/logo";
+@import "./components/btn-submit";
+@import "./components/main-btn";
+@import "./components/social-list";
+@import "./components/btn-portfolio";
+
+//LAYOUT
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/future";
+@import "./layout/technology";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/backdrop";
+@import "./layout/modal-form";
+@import "./layout/-portfolio.scss";

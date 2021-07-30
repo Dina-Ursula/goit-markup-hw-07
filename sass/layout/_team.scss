@@ -1,0 +1,69 @@
+.section-team {
+  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 94px;
+  background: var(--team-backgroung);
+}
+.title-team {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--future-title);
+}
+.paragraph {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--future-title);
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: Roboto;
+  font-style: normal;
+}
+.profession {
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  color: var(--main-text-color);
+}
+.list-team {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 0;
+  text-decoration: none;
+
+  /* outline: 2px solid red; */
+}
+
+.list-team > .container-team:not(:last-child) {
+  margin-right: 30px;
+}
+.img {
+  display: block;
+}
+.container-team {
+  background: #ffffff;
+  text-align: center;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}

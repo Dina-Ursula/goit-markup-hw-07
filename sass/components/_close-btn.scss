@@ -1,0 +1,16 @@
+.close-menu {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 50%;
+  transition: fill var(--animation-hover);
+}
+.close-menu:hover {
+  fill: var(--accent-color-focus);
+}
