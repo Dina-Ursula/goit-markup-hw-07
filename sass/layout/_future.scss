@@ -2,7 +2,7 @@
   padding-top: 94px;
   padding-bottom: 47px;
 }
-.future-list {
+.future {
   display: flex;
   justify-content: center;
   padding-left: 0;
@@ -11,20 +11,22 @@
   text-decoration: none;
   padding-left: 0;
 }
-.future-list .list > .item {
-  flex-basis: calc (100% / 4 -30px);
-  margin-right: 30px;
-}
+
 .item {
   width: 270px;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
+
+  .future > &:not(:last-child) {
+    margin-right: 30px;
+  }
+  .future .list > & {
+    flex-basis: calc (100% / 4 -30px);
+    margin-right: 30px;
+  }
 }
-.future-list > .item:not(:last-child) {
-  margin-right: 30px;
-}
-.future-list-title {
+.future__title {
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;

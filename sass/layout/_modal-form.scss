@@ -28,12 +28,14 @@
 
   cursor: pointer;
   transition: border-color var(--animation-hover);
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color-focus);
+  }
 }
-.contact-form:hover,
-.contact-form:focus {
-  outline: none;
-  border-color: var(--accent-color-focus);
-}
+
 .tittle-modal {
   display: block;
   margin: 0 auto;
@@ -77,11 +79,12 @@
   left: 15px;
   transform: translateY(-50%);
   transition: fill var(--animation-hover);
+
+  .contact-form:focus + & {
+    fill: var(--accent-color-focus);
+  }
 }
 
-.contact-form:focus + .modal-svg {
-  fill: var(--accent-color-focus);
-}
 .coments {
   display: block;
   width: 448px;
@@ -100,22 +103,14 @@
   box-sizing: border-box;
   border-radius: 4px;
   transition: border-color var(--animation-hover);
+
+  &:focus,
+  &:hover {
+    outline: none;
+    border-color: var(--accent-color-focus);
+  }
 }
-.coments:focus,
-.coments:hover {
-  outline: none;
-  border-color: var(--accent-color-focus);
-}
-.modal-form-field::before {
-  content: "";
-  display: block;
-  width: 16px;
-  height: 15px;
-  cursor: pointer;
-  border-radius: 2px;
-  border: 2px solid var(--future-title);
-  margin-right: 8px;
-}
+
 .modal-form-field {
   display: flex;
   align-items: center;
@@ -126,6 +121,17 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 15px;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 2px solid var(--future-title);
+    margin-right: 8px;
+  }
 }
 .checkbox:checked + .modal-form-field::before {
   background-color: var(--accent-color-focus);

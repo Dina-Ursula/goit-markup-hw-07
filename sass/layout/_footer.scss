@@ -6,31 +6,33 @@
   margin-left: auto;
   background-color: var(--hero-background-color);
 }
+.contacts {
+  margin-right: 70px;
+}
 .address {
   margin-bottom: 60px;
-}
-.address-link .link {
-  display: block;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  text-decoration: none;
-  letter-spacing: 0.03em;
 }
 .list-footer {
   display: block;
   width: 230px;
   margin: 0;
   padding-left: 0;
+
+  .address-link .link {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+
+    .list-footer > & {
+      color: #ffffff;
+    }
+  }
 }
-.contacts-link:hover,
-.contacts-link:focus {
-  color: var(--back-button-focus-hover);
-}
-.list-footer > .link:not(:last-child) {
-  margin-bottom: 9px;
-}
+
 .link {
   text-decoration: none;
   list-style: none;
@@ -40,13 +42,17 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color-focus);
+  }
+
+  .list-footer > &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
-.list-footer > .address-link {
-  color: #ffffff;
-}
-.contacts {
-  margin-right: 70px;
-}
+
 /* Social-list */
 .footer-box {
   display: flex;
@@ -100,18 +106,20 @@
   cursor: pointer;
   outline: none;
   transition: border-color var(--animation-hover);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color-focus);
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
-.email-send:hover,
-.email-send:focus {
-  border-color: var(--accent-color-focus);
-}
-.email-send::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-
-  color: rgba(255, 255, 255, 0.6);
-}
 .follow-btn {
   display: flex;
   justify-content: center;
@@ -135,15 +143,17 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: transparent;
+
+  .svg-send {
+    display: inline-block;
+    content: "";
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    fill: var(--footer-tittle-color);
+  }
 }
-.svg-send {
-  display: inline-block;
-  content: "";
-  margin-left: 10px;
-  width: 24px;
-  height: 24px;
-  fill: var(--footer-tittle-color);
-}
+
 .footer-form-label {
   display: inline-flex;
   align-items: center;

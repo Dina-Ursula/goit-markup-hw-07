@@ -15,9 +15,10 @@
 .icon-section-list {
   display: flex;
   padding-left: 0;
-}
-.icon-section-list {
-  text-decoration: none;
+
+  & {
+    text-decoration: none;
+  }
 }
 .icon-section-list > .icon-galery:not(:last-child) {
   margin-right: 30px;

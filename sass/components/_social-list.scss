@@ -1,47 +1,45 @@
-.team-social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-}
 .team-link {
   display: flex;
   justify-content: center;
   width: 206px;
   height: 44px;
   padding: 0;
-}
-.application-team {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  fill: var(--social-link);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.team-link > .team-social:not(:last-child) {
-  margin-right: 10px;
-}
-.application-team:hover,
-.application-team:focus,
-.application-team:hover .socisl-list,
-.application-team:focus .socisl-list {
-  background-color: var(--accent-color-focus);
-  fill: #ffffff;
-}
-// footer
-.social-navigate {
-  display: flex;
-  margin: 0;
-  padding: 0;
 
-  text-decoration: none;
+  .team-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  .application-team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    fill: var(--social-link);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color-focus);
+      fill: #ffffff;
+    }
+  }
 }
+
+// footer
+
 .social-box {
   width: 206px;
   height: 80px;
@@ -49,9 +47,20 @@
   top: 2751px;
   margin: 0;
 }
-.social-navigate > .application:not(:last-child) {
-  margin-right: 10px;
+.social-navigate {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
+.application {
+  border-radius: 50%;
+
+  .social-navigate > &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
 .icon-social {
   display: flex;
   justify-content: center;
@@ -62,13 +71,11 @@
   height: 44px;
   fill: #ffffff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.application {
-  border-radius: 50%;
-}
-.icon-social:hover,
-.icon-social:focus,
-.icon-social:hover .social-list,
-.icon-social:focus .socisl-list {
-  background-color: var(--accent-color-focus);
+
+  &:hover,
+  &:focus,
+  &:hover .social-list,
+  &:focus .socisl-list {
+    background-color: var(--accent-color-focus);
+  }
 }

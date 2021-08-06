@@ -10,7 +10,8 @@
   box-sizing: border-box;
   border-radius: 50%;
   transition: fill var(--animation-hover);
-}
-.close-menu:hover {
-  fill: var(--accent-color-focus);
+
+  &:hover {
+    fill: var(--accent-color-focus);
+  }
 }
